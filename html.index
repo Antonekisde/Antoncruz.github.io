@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mood</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+        }
+
+        h1 {
+            margin-bottom: 25px;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        .box {
+            background-color: #1a1a1a;
+            padding: 25px 30px;
+            border-radius: 8px;
+            min-width: 280px;
+            max-width: 400px;
+            font-size: 18px;
+        }
+
+        .text {
+            display: inline;
+        }
+
+        .cursor {
+            display: inline-block;
+            margin-left: 4px;
+            animation: blink 1s steps(1) infinite;
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mood</h1>
+
+    <div class="box">
+        <span class="text">no quiero entrar a la U 😤</span>
+        <span class="cursor">|</span>
+    </div>
+
+</body>
+</html>
